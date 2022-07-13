@@ -27,4 +27,6 @@ public class PlayerControl : MonoBehaviour
         transform.position += transform.forward * forwardSpeed * v * Time.deltaTime; //プレイヤーを移動
         transform.Rotate(0, rotationSpeed * h * Time.deltaTime, 0); //プレイヤーを回転
     }
+
+    
 }
