@@ -7,6 +7,8 @@ public class PlayerControl : MonoBehaviour
     public float rotationSpeed = 100.0f; // 回転速度
     private Animator anim; //Animator型変数宣言
     private bool runFlg;
+     public Collider attackCollider;  
+
     void Start()
     {
         anim = GetComponent<Animator>(); //このスクリプトがアサインされたキャラクターのアニメーターコントローラーを取得
@@ -26,6 +28,20 @@ public class PlayerControl : MonoBehaviour
         anim.SetBool("Walk", runFlg); //アニメーターコントローラーのRunに値(runFlg)を代入
         transform.position += transform.forward * forwardSpeed * v * Time.deltaTime; //プレイヤーを移動
         transform.Rotate(0, rotationSpeed * h * Time.deltaTime, 0); //プレイヤーを回転
+
+           if (Input.GetMouseButtonDown(0))
+        {
+            
+            anim.SetBool("Attack",true);    //マウスクリックで攻撃モーション
+        }
+    }
+      public void OffColliderAttack()
+    {
+        attackCollider.enabled = false;
+    }
+    public void OnColliderAttack()
+    {
+        attackCollider.enabled = true;
     }
 
     
