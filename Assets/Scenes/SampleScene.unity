@@ -368,6 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ce34499fabd7e45b06ab118ad1ac97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breakEffect: {fileID: 4748511514583393481, guid: 16ace56d5c627c341b269c902e6de469, type: 3}
 --- !u!1001 &535364595
 PrefabInstance:
   m_ObjectHideFlags: 0
