@@ -13,7 +13,7 @@ public class Skelton_cont : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gm = GameObject.Find ("GameManager"); ;
+        gm = GameObject.Find ("GameManager1"); ;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
     }
@@ -23,7 +23,7 @@ public class Skelton_cont : MonoBehaviour
     {
        Destroy(gameObject);
         GenerateEffect();
-        gm.GetComponent<GameManager> ().DecreaseLife(); 
+        gm.GetComponent<GameManager1> ().DecreaseLife(); 
     }
 
     //エフェクトを生成する

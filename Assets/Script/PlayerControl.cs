@@ -33,7 +33,7 @@ public class PlayerControl : MonoBehaviour
         anim.SetBool("Run", runFlg); //アニメーターコントローラーのRunに値(runFlg)を代入
         transform.position += transform.forward * forwardSpeed * v * Time.deltaTime; //プレイヤーを移動
         transform.Rotate(0, rotationSpeed * h * Time.deltaTime, 0); //プレイヤーを回転
-         if (Input.GetMouseButtonDown(0))
+         if (Input.GetKey(KeyCode.Return))
         {
             //col.enabled = true;
             Debug.Log("左ボタンが押されています。");

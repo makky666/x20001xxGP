@@ -18,7 +18,7 @@ public class TitleManager : MonoBehaviour
         
          if (Input.GetKey(KeyCode.Return))
         {
-            SceneManager.LoadScene ("Game");
+            SceneManager.LoadScene ("StageChoice");
         
         } 
     }
