@@ -17,7 +17,7 @@ public class RetryTitle : MonoBehaviour
     {
           if (Input.GetKey(KeyCode.Return))
         {
-            SceneManager.LoadScene ("Game");
+            SceneManager.LoadScene ("StageChoice");
         
         } 
         if (Input.GetKey(KeyCode.Escape))

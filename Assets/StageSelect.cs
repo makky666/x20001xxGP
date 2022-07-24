@@ -20,6 +20,11 @@ public class StageSelect : MonoBehaviour
             SceneManager.LoadScene ("BigForest");
         
         } 
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene ("BlueCastle");
+        
+        } 
         if (Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene ("Title");

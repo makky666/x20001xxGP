@@ -15,8 +15,14 @@ EditorBuildSettings:
     path: Assets/Scenes/BigForest.unity
     guid: 9f31079c9f31caa4ba05d9d1407a0eb3
   - enabled: 1
+    path: Assets/Scenes/BlueCastle.unity
+    guid: f97c4422773f1c84e9d36eb4eb64cbb8
+  - enabled: 1
     path: Assets/Scenes/Stage1.unity
     guid: 5c011f66322ccd24fa412f2b2159770d
+  - enabled: 1
+    path: Assets/Scenes/Stage2.unity
+    guid: e7ec468fc320fb04ea920fdc1b7eab31
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 47a7907313889f547b98078c858d4d58

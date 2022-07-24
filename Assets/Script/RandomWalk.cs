@@ -4,7 +4,7 @@ using UnityEngine;
  
 public class RandomWalk : MonoBehaviour
 {
-    private float chargeTime = 5.0f;
+    private float chargeTime = 2.0f;
     private float timeCount;
      private Animator anim;  
 

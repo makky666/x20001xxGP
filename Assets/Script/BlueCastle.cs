@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class BigForest : MonoBehaviour
+public class BlueCastle : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,7 +17,7 @@ public class BigForest : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
-            SceneManager.LoadScene ("Stage1");
+            SceneManager.LoadScene ("Stage2");
         
         } 
          if (Input.GetKey(KeyCode.Escape))
