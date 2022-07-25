@@ -9,7 +9,6 @@ public class BlueCastle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -17,6 +16,7 @@ public class BlueCastle : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Return))
         {
+            SoundManager.Instance.PlaySE(SESoundData.SE.Submit);
             SceneManager.LoadScene ("Stage2");
         
         } 

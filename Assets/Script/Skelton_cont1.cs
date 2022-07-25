@@ -21,6 +21,8 @@ public class Skelton_cont1 : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        SoundManager.Instance.PlaySE(SESoundData.SE.Damage);
+        
        Destroy(gameObject);
         GenerateEffect();
         gm.GetComponent<GameManager2> ().DecreaseLife(); 
@@ -29,6 +31,7 @@ public class Skelton_cont1 : MonoBehaviour
     //エフェクトを生成する
     void GenerateEffect()
     {
+        SoundManager.Instance.PlaySE(SESoundData.SE.Destory);
         //エフェクトを生成する
         GameObject effect = Instantiate(breakEffect) as GameObject;
         //エフェクトが発生する場所を決定する(敵オブジェクトの場所)

@@ -30,11 +30,13 @@ public class PlayerControl : MonoBehaviour
         {
             runFlg = false;
         }
+        
         anim.SetBool("Run", runFlg); //アニメーターコントローラーのRunに値(runFlg)を代入
         transform.position += transform.forward * forwardSpeed * v * Time.deltaTime; //プレイヤーを移動
         transform.Rotate(0, rotationSpeed * h * Time.deltaTime, 0); //プレイヤーを回転
-         if (Input.GetKey(KeyCode.Return))
+         if (Input.GetKeyDown(KeyCode.Return))
         {
+            SoundManager.Instance.PlaySE(SESoundData.SE.Attack);
             //col.enabled = true;
             Debug.Log("左ボタンが押されています。");
             anim.SetBool("Attack",true);    //マウスクリックで攻撃モーション

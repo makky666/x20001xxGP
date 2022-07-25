@@ -15,6 +15,7 @@ public class GameManager2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.PlayBGM(BGMSoundData.BGM.Stage2);
         for(int i=0;i<6;i++){
             GameObject Enemy = Instantiate(EnemyP);
             Enemy.transform.position=new Vector3(Random.Range(-15f,15f),0.375f,Random.Range(-13f,13f));

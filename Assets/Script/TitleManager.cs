@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
+        
     // Start is called before the first frame update
     void Start()
     {
-        
+           SoundManager.Instance.PlayBGM(BGMSoundData.BGM.Title);
+
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class TitleManager : MonoBehaviour
         
          if (Input.GetKey(KeyCode.Return))
         {
+            SoundManager.Instance.PlaySE(SESoundData.SE.Submit);
             SceneManager.LoadScene ("StageChoice");
         
         } 

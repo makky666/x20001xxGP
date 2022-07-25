@@ -1716,6 +1716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6160496529537908915, guid: cb8d9d5fab4fdf94c95037384ceffe60, type: 3}
+      propertyPath: m_RenderingPath
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7325200329826596520, guid: cb8d9d5fab4fdf94c95037384ceffe60, type: 3}
       propertyPath: m_Name
       value: Knight
@@ -2524,7 +2528,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2625,7 +2629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6501890148153741593, guid: 499c163a90a8a3e4c817a5a6f827c3f5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 13.114
       objectReference: {fileID: 0}
     - target: {fileID: 6501890148153741593, guid: 499c163a90a8a3e4c817a5a6f827c3f5, type: 3}
       propertyPath: m_LocalScale.y
@@ -2641,7 +2645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6501890148153741593, guid: 499c163a90a8a3e4c817a5a6f827c3f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.11427191
+      value: -0.11427
       objectReference: {fileID: 0}
     - target: {fileID: 6501890148153741593, guid: 499c163a90a8a3e4c817a5a6f827c3f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3767,6 +3771,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0819514c986124a80f4647d7257a3d, type: 3}
+--- !u!1 &1927083179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1209846326057578, guid: 4e3021334b9182d4bb76f3519a517b5e, type: 3}
+  m_PrefabInstance: {fileID: 1994964347}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1927083184
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927083179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d203483e1ec100e4a814f03abcffaf73, type: 3}
 --- !u!1001 &1994964347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3774,6 +3797,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -504723079262298757, guid: 4e3021334b9182d4bb76f3519a517b5e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1209846326057578, guid: 4e3021334b9182d4bb76f3519a517b5e, type: 3}
       propertyPath: m_Name
       value: Oak
@@ -3826,7 +3853,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -504723079262298757, guid: 4e3021334b9182d4bb76f3519a517b5e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4e3021334b9182d4bb76f3519a517b5e, type: 3}
 --- !u!1001 &1999624236
 PrefabInstance:

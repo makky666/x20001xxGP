@@ -9,7 +9,6 @@ public class StageSelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -17,11 +16,13 @@ public class StageSelect : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
+            SoundManager.Instance.PlaySE(SESoundData.SE.Submit);
             SceneManager.LoadScene ("BigForest");
         
         } 
         if (Input.GetKey(KeyCode.Alpha2))
         {
+            SoundManager.Instance.PlaySE(SESoundData.SE.Submit);
             SceneManager.LoadScene ("BlueCastle");
         
         } 

@@ -15,13 +15,16 @@ public class GameManager1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        SoundManager.Instance.PlayBGM(BGMSoundData.BGM.Stage1);
+
+        
         for(int i=0;i<12;i++){
             GameObject Enemy = Instantiate(EnemyP);
-            Enemy.transform.position=new Vector3(Random.Range(-18f,18f),0.375f,Random.Range(-18f,18f));
+            Enemy.transform.position=new Vector3(Random.Range(-17f,17f),0.375f,Random.Range(-17f,17f));
         }
         for(int i=0;i<13;i++){
                     GameObject Enemy = Instantiate(EnemyV);
-                    Enemy.transform.position=new Vector3(Random.Range(-18f,18f),0.375f,Random.Range(-18f,18f));
+                    Enemy.transform.position=new Vector3(Random.Range(-17f,17f),0.375f,Random.Range(-17f,17f));
                 }
         EnemyText = GameObject.Find("EnemyCount");
         this.EnemyText.GetComponent<Text> ().text = "EnemyCount : " + Enemy;
